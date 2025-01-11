@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-image: url('fotobackground.jpeg'); /* Gambar latar belakang */
+    background-image: url('fotobackground.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -233,7 +233,7 @@ footer .social-icons a:hover {
 
 /* Gaya untuk bagian dengan gambar background */
 .section-background {
-    background-image: url('/images/ppdb-2025.jpg'); /* Ganti dengan URL gambar Anda */
+    background-image: url('ppdb-2025.jpg'); /* Ganti dengan URL gambar Anda */
     background-size: cover; /* Agar gambar menutupi seluruh bagian */
     background-position: center; /* Gambar tetap terpusat */
     background-attachment: fixed; /* Agar background tetap pada tempatnya ketika di-scroll */
