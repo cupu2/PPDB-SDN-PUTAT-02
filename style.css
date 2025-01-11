@@ -1,0 +1,407 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #244261;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-image: url('fotobackground.jpeg'); /* Gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+header .btn-main {
+    background-color: #f1c40f;
+    color: #003366;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+header .btn-main:hover {
+    background-color: #e1b00f;
+    transform: scale(1.1);
+}
+
+/* Navigation */
+nav {
+    background-color: #003366;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #f1c40f;
+    border-radius: 5px;
+}
+
+/* Section About */
+.section-about {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section-about p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Section Program */
+.section-program {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-program h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.program-item {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.program-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.program-item p {
+    font-size: 1.2em;
+}
+
+/* Section Pendaftaran */
+.section-register {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.section-register h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section-register p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.section-register .btn-register {
+    background-color: #f1c40f;
+    color: #003366;
+    padding: 15px 40px;
+    font-size: 1.3em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.section-register .btn-register:hover {
+    background-color: #e1b00f;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #f1c40f;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .section-program {
+        padding: 40px 20px;
+    }
+
+    .section-register {
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .section-register .btn-register,
+    header .btn-main {
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+
+/* Gaya untuk bagian dengan gambar background */
+.section-background {
+    background-image: url('/images/ppdb-2025.jpg'); /* Ganti dengan URL gambar Anda */
+    background-size: cover; /* Agar gambar menutupi seluruh bagian */
+    background-position: center; /* Gambar tetap terpusat */
+    background-attachment: fixed; /* Agar background tetap pada tempatnya ketika di-scroll */
+    padding: 60px 0; /* Memberikan ruang di atas dan bawah */
+    color: white; /* Teks menjadi putih agar kontras dengan gambar */
+    text-align: center; /* Menyusun teks agar berada di tengah */
+    min-height: 400px; /* Menentukan tinggi minimum untuk menjaga tampilan */
+}
+
+/* Responsif untuk perangkat dengan layar lebih kecil */
+@media screen and (max-width: 768px) {
+    .section-background {
+        background-attachment: scroll; /* Mengubah latar belakang agar bergerak saat scroll di perangkat mobile */
+        padding: 40px 0; /* Mengurangi ruang di atas dan bawah */
+        min-height: 300px; /* Menyesuaikan tinggi minimum untuk perangkat kecil */
+    }
+}
+
+/* Responsif untuk perangkat dengan layar sangat kecil seperti ponsel */
+@media screen and (max-width: 480px) {
+    .section-background {
+        padding: 20px 0; /* Menyesuaikan padding untuk tampilan yang lebih kecil */
+        min-height: 200px; /* Menyesuaikan tinggi minimum */
+    }
+}
+
+
+.section-background h2 {
+    font-size: 50px; /* Ukuran font untuk judul */
+    margin-bottom: 20px; /* Memberikan jarak antara judul dan paragraf */
+    font-weight: bold; /* Membuat judul lebih tegas */
+}
+
+.section-background p {
+    font-size: 18px; /* Ukuran font untuk paragraf */
+    max-width: 800px; /* Membatasi lebar teks agar tidak terlalu lebar */
+    margin: 0 auto; /* Memusatkan teks */
+    line-height: 1.6; /* Memberikan jarak antar baris agar mudah dibaca */
+}
+
+/* Tampilan responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .section-background h2 {
+        font-size: 40px; /* Menyesuaikan ukuran font di perangkat kecil */
+    }
+
+    .section-background p {
+        font-size: 16px; /* Mengurangi ukuran font untuk mobile */
+    }
+}
+
+
+
+/* Styling untuk layar kecil */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    input[type="text"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+
+    .btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    animation: shake 0.9s ease-in-out infinite; /* Menambahkan animasi shake */
+}
+
+/* Animasi goyang */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Efek hover */
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;  /* Vertikal tengahkan konten */
+    justify-content: center;
+}
+
+.btn-submit img {
+    width: 70px; /* Ukuran gambar */
+    height: 70px; /* Ukuran gambar */
+    margin-right: 10px; /* Spasi antara gambar dan teks */
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 0rem;
+    background: #333;
+    color: white;
+}
+
+
+
+
+
+  
+  .clock-container {
+    background-color: #333;
+ 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #clock {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+

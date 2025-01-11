@@ -1,0 +1,207 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Form Section */
+.form-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group input[type="file"] {
+    padding: 8px;
+}
+
+button[type="submit"] {
+    background-color: #f1c40f;
+    color: #003366;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e1b00f;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .form-section .container {
+        padding: 20px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="file"] {
+        font-size: 1em;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+        padding: 12px 30px;
+    }
+}
+
+/* Styling untuk tombol kembali */
+.btn-back {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+
+ /* Goyang-goyang lucu untuk teks h2 */
+        h2 {
+            font-size: 2rem;
+            color: #007bff;
+            animation: shake 0.5s ease-in-out infinite;
+        }
+
+        /* Keyframes untuk efek goyang-goyang */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(10px); }
+        }
+
+        /* Styling untuk tombol */
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+
+
+        /* Styling untuk layar kecil */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    input[type="text"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
